@@ -13,12 +13,12 @@ function setDefaultValues() {
 }
 
 function MultipleStatesGood() {
-  const [values, setValues] = useState<FormFields>(setDefaultValues)
+  const [fields, setFields] = useState<FormFields>(setDefaultValues)
 
   function handleChange(event: React.ChangeEvent<HTMLInputElement>) {
     const { name, value } = event.target
 
-    setValues((prevState) => ({
+    setFields((prevState) => ({
       ...prevState,
       [name]: value
     }))
@@ -26,12 +26,12 @@ function MultipleStatesGood() {
 
   function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault()
-    console.log(values)
+    console.log(fields)
     clearFormFields()
   }
 
   function clearFormFields() {
-    setValues(setDefaultValues)
+    setFields(setDefaultValues)
   }
 
   return (
@@ -49,7 +49,7 @@ function MultipleStatesGood() {
             name="email"
             id="email"
             className="form-control"
-            value={values.email}
+            value={fields.email}
             onChange={handleChange}
           />
         </div>
@@ -64,7 +64,7 @@ function MultipleStatesGood() {
             name="password"
             id="password"
             className="form-control"
-            value={values.password}
+            value={fields.password}
             onChange={handleChange}
           />
         </div>
