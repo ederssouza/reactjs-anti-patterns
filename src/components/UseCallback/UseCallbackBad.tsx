@@ -33,6 +33,7 @@ function UseCallbackBad() {
     fetch('https://dummyjson.com/carts/1')
       .then((res) => res.json())
       .then(setCart)
+      .catch((error) => console.error(error))
   }, [])
 
   return (

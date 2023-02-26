@@ -19,7 +19,7 @@ function AbortingFetchRequestsGood() {
       .then(setUsers)
       .catch((error) => {
         if (error.name === 'AbortError') {
-          console.log('cancelled!')
+          console.error('cancelled!')
         } else {
           setError(error.toString())
         }
