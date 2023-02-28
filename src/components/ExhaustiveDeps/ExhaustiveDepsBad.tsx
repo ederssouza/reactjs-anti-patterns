@@ -23,7 +23,7 @@ function ExhaustiveDepsBad() {
         setUsers(data)
       } catch (err) {
         if (env !== 'production') {
-          setError((err as string).toString())
+          setError(err?.toString())
         }
       }
     }

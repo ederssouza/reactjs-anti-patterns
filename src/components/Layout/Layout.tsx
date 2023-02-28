@@ -10,15 +10,15 @@ function Layout() {
     { title: 'Update state', path: '/update-state' },
     { title: 'Multiple states', path: '/multiple-states' },
     {
-      title: 'Component within components',
+      title: '** Component within components',
       path: '/component-within-components'
     },
     {
-      title: 'Invoking component functions directly',
+      title: '** Invoking component functions directly',
       path: '/invoking-component-functions-directly'
     },
-    { title: 'Aborting fetch requests', path: '/aborting-fetch-requests' },
-    { title: 'exhaustive-deps', path: '/exhaustive-deps' },
+    { title: '** Aborting fetch requests', path: '/aborting-fetch-requests' },
+    { title: '** exhaustive-deps', path: '/exhaustive-deps' },
     { title: 'useMemo', path: '/use-memo' },
     { title: 'useCallback', path: '/use-callback' }
   ]

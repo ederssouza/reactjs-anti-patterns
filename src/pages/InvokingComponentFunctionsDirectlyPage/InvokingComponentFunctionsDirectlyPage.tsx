@@ -24,17 +24,17 @@ function InvokingComponentFunctionsDirectlyPage() {
       </div>
 
       {/* basic example */}
-      <InvokingComponentFunctionsDirectly />
+      {<>{InvokingComponentFunctionsDirectly()}</>}
 
       {/* Uncaught Error: Rendered more hooks than during the previous render. */}
       {/* {sendEmail && <div>{InvokingComponentFunctionsDirectly()}</div>} */}
 
-      {/* good implementation */}
-      {/* {sendEmail && <InvokingComponentFunctionsDirectly />} */}
-
       {/* alternative implementation */}
       {/* {sendEmail &&
         React.createElement(InvokingComponentFunctionsDirectly, null)} */}
+
+      {/* good implementation */}
+      {/* {sendEmail && <InvokingComponentFunctionsDirectly />} */}
     </div>
   )
 }
