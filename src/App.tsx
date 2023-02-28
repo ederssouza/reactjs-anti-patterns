@@ -18,8 +18,8 @@ import {
 function App() {
   return (
     <div className="container">
-      <h1>ReactJS - Bad practices</h1>
-      <p>Examples of bad practices in ReactJS applications</p>
+      <h1>ReactJS Anti-Patterns</h1>
+      <p>Examples of Anti-Patterns in ReactJS applications</p>
 
       <Routes>
         <Route path="/" element={<Layout />}>
